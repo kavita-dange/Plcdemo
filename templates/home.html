@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    .center {
+        text-align: center;
+        margin: auto;
+      width: 40%;
+     border: 2px solid ;
+     padding: 10px;
+      
+    }
+    div {
+
+border: 1px solid black;
+background-color: lightpink;
+padding-top: 50px;
+padding-right: 8px;
+padding-bottom: 50px;
+padding-left: 80px;
+text-align: center
+}
+
+    body {
+        background-color: lightpink;
+    }
+    </style>
+    
+    </head>    
+<body>
+<h1 style="background-color:rgb(24, 130, 66);"></h1>
+<h2 align="center">Job Placement
+
+<p>Predict The Student Is Placed OR Not </p></h2>
+<img src="static\img1.jpeg" alt="Placement" width="1500" height="300"> 
+<div class="center">
+<form method ="post" action="/prediced_placement">
+  
+  
+  <label for="gender"> Enter Gender: </label>
+  <label for="gender"> Male: </label>
+  <input type="radio" id="male" name="gender" value="M">
+   <label for="gender"> Female: </label>
+  <input type="radio" id="Female" name="gender" value="F"><br><br>
+
+  <label for="ssc_percentage">Enter SSC Percentage:</label>
+  <input type="text" id="ssc_percentage" name="ssc_percentage"><br><br>
+
+  <label for="ssc_board">Enter SSC Board:</label>
+  <input type="text" id="ssc_board" name="ssc_board"><br><br>
+  <label for="hsc_percentage">Enter HSC Percentage:</label>
+  <input type="text" id="hsc_percentage" name="hsc_percentage"><br><br>
+  <label for="hsc_board">Enter HSC Board:</label>
+  <input type="text" id="hsc_board" name="hsc_board"><br><br>
+  <label for="hsc_subject">Enter HSC Branch:</label>
+  <select name="hsc_subject">
+   <!-- <option value="Select">Select....</option> -->
+   <option value="Arts">Arts</option>
+   <option value="Science">Science</option>
+   <option value="Commerce">Commerce</option></select>
+   <br><br>
+   <label for="degree_percentage">Enter Degree Percentage:</label>
+  <input type="degree_percentage" id="degree_percentage" name="degree_percentage"><br><br>
+  <label for="undbranch">Enter UnderGraduate Degree Branch:</label>
+  <select name="undergrad_degree">
+   <!-- <option value="Select">Select....</option> -->
+   <option value="Comm&Mgmt">Comm&Mgmt</option>
+   <option value="Sci&Tech">Sci&Tech</option>
+   <option value="Others">Others</option>
+   </select><br><br>
+
+   <label for="work_experience">Enter Working Experiance: </label>
+   <label for="work_experience"> Yes </label>
+  <input type="radio" id="Yes" name="work_experience" value="Yes">
+  <label for="work_experience"> No </label>
+  <input type="radio" id="No" name="work_experience" value="No"><br><br>
+
+
+  <label for="emp_test_percentage">Enter Employee Test Percentage:</label>
+  <input type="text" id="emp_test_percentage" name="emp_test_percentage"><br><br>
+  
+  <label for="undbranch">Enter Specilization:</label>
+  <select name="specialisation">
+   <!-- <option value="Select">Select....</option> -->
+   <option value="Mkt&Fin">Mkt&Fin</option>
+   <option value="Mkt&HR">Mkt&HR</option>
+  </select><br><br>
+   <label for="mba_percent">Enter MBA Percentage:</label>
+  <input type="text" id="mba_percent" name="mba_percent"><br><br>
+  <input type="submit" value="Predict">
+</div>
+</form>
+</body>
+</html>
