@@ -24,10 +24,10 @@ class placement():
         
 
     def load_model(self):
-        with open(r'D:\Phython\Student\project_app\Logistic_Model.pkl', 'rb') as f:
+        with open('Logistic_Model.pkl', 'rb') as f:
             self.model = pickle.load(f)
         
-        with open(r'D:\Phython\Student\project_app\project_data.json', 'r') as f:
+        with open('project_data.json', 'r') as f:
             self.json_data = json.load(f)
 
     def get_predicted_placement(self):
