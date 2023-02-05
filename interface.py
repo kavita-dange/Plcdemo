@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, render_template, request
 import config
-from project_app.utils import placement
+from utils import placement
 
 app = Flask(__name__)
 
