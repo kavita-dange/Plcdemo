@@ -57,12 +57,12 @@ def get_predicted_placement():
         print(f'gender >> {gender}, ssc_percentage >> {ssc_percentage}, ssc_board >> {ssc_board}, hsc_percentage >> {hsc_percentage}, hsc_board >> {hsc_board}')
         med_ins = placement(gender, ssc_percentage, ssc_board, hsc_percentage, hsc_board,hsc_subject, degree_percentage,
         undergrad_degree,work_experience, emp_test_percentage, specialisation,mba_percent)
-        plc = med_ins.get_predicted_placement()
+        #plc = med_ins.get_predicted_placement()
         #return jsonify({'Result':f"Predicted student placement is: {plc}"})
         return render_template('index.html',plc = med_ins.get_predicted_placement())
 
     else:
-        print('We are in POST Method')
+        print('We are in GET Method')
         input_data = request.form
         print('INPUT DATA >> ', input_data)
         gender =input_data['gender']
