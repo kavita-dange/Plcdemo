@@ -80,4 +80,5 @@ if __name__ == '__main__':
     mba_percent=67
     med_ins = placement(gender, ssc_percentage, ssc_board, hsc_percentage, hsc_board,hsc_subject, degree_percentage,
     undergrad_degree,work_experience, emp_test_percentage, specialisation,mba_percent)
-    get_predicted_placement()
+
+    med_ins.get_predicted_placement()
